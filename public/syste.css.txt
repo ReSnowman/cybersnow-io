@@ -1,0 +1,4 @@
+:root {
+  --accent: #00ff00; /* Bright Hacker Green */
+  --background: #000000; /* Pure Black */
+}

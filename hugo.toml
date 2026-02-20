@@ -1,0 +1,9 @@
+baseURL = 'https://cybersnow.io/'
+languageCode = 'en-us'
+title = 'Jake Snow | IT Portfolio'
+theme = 'terminal'
+
+[params]
+  # This gives it the classic retro orange command-line vibe
+  themeColor = "blue"
+  showMenuItems = 2
