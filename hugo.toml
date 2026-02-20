@@ -4,6 +4,6 @@ title = 'Jake Snow | IT Portfolio'
 theme = 'terminal'
 
 [params]
-  # This gives it the classic retro orange command-line vibe
-  themeColor = "blue"
+  themeColor = "green"
   showMenuItems = 2
+  fullPostContent = true
