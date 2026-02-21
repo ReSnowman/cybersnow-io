@@ -1,7 +1,14 @@
-+++
-title = "Dietpi Adguard Homelab"
-date = "2026-02-21T13:10:15-05:00"
-#dateFormat = "2006-01-02" # This value can be configured for per-post date formatting
+---
+
+title: "Operation: Network Sinkhole"
+
+date: 2026-02-21
+
+draft: false
+
+---
+
+
 
 \## Operation: Network Sinkhole
 
@@ -38,14 +45,4 @@ To keep everything centralized, I spun up Heimdall as the primary dashboard. It 
 
 
 Next up on the lab block: segmenting this setup further and diving deeper into the firewall traffic logs.
-author = ""
-authorTwitter = "" #do not include @
-cover = ""
-tags = \["", ""]
-keywords = \["", ""]
-description = ""
-showFullContent = false
-readingTime = false
-hideComments = false
-+++
 
