@@ -1,9 +1,10 @@
 baseURL = 'https://cybersnow.io/'
 languageCode = 'en-us'
-title = 'Jake Snow | IT Portfolio'
+title = 'CYBERSNOW // DOCUMENTATION'
 theme = 'terminal'
 
 [params]
-  themeColor = "green"
+  # This sets a custom neon cyan color instead of the boring presets
+  themeColor = "#00ffff"
   showMenuItems = 2
   fullPostContent = true
