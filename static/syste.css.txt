@@ -1,4 +1,31 @@
+/* 1. Set the Custom Colors (Neon Cyan and Deep Black) */
 :root {
-  --accent: #00ff00; /* Bright Hacker Green */
-  --background: #000000; /* Pure Black */
+  --theme: #00ffff; 
+  --background: #050505; 
+}
+
+/* 2. The Breathing Neon Glow Animation */
+h1, h2, h3, .logo {
+  text-shadow: 0 0 5px var(--theme), 0 0 10px var(--theme);
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { text-shadow: 0 0 5px var(--theme), 0 0 10px var(--theme); opacity: 1; }
+  100% { text-shadow: 0 0 2px var(--theme), 0 0 4px var(--theme); opacity: 0.8; }
+}
+
+/* 3. The Live CRT Scanline Overlay */
+body::after {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  z-index: 999;
+  background-size: 100% 4px;
+  pointer-events: none;
 }

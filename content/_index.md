@@ -1,20 +1,13 @@
 ---
-
-title: "Jake Snow - Systems Administrator"
-
+title: "CYBERSNOW // THREAT LOGS"
 ---
+## Secure Connection Established...
 
-\## System Initialized
+Welcome to my field notes. I am a System Administrator and CySA+ certified security practitioner. 
 
+This blog tracks my journey through enterprise security, home lab experiments, and firewall configurations. 
 
-
-Welcome to the new documentation hub. I am building this site to serve as a central repository for the automation scripts I write for the MSP, as well as a living IT portfolio. 
-
-
-
-\*\*Current Status:\*\*
-
-\* \*\*Active Certifications:\*\* CySA+
-
-\* \*\*Currently Studying:\*\* Fireware Essentials Exam
-
+**Current Operations:**
+* Securing VMs and Active Directory in the Home Lab
+* Prepping for the Fireware Essentials Exam
+* Analyzing network traffic and automation scripts
