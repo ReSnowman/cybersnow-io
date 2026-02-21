@@ -4,7 +4,7 @@ title = 'CYBERSNOW // DOCUMENTATION'
 theme = 'terminal'
 
 [params]
-  # This sets a custom neon cyan color instead of the boring presets
-  themeColor = "#00ffff"
+  themeColor = "blue" 
   showMenuItems = 2
   fullPostContent = true
+  customCSS = ["style.css"]
