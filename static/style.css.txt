@@ -29,3 +29,16 @@ body::after {
   background-size: 100% 4px;
   pointer-events: none;
 }
+
+/* 4. Custom Tactical Cursor */
+body, html {
+  cursor: crosshair, auto;
+}
+
+a, button {
+  cursor: crosshair, pointer;
+}
+
+p, h1, h2, h3, code, span {
+  cursor: text;
+}
