@@ -8,3 +8,10 @@ theme = 'terminal'
   showMenuItems = 2
   fullPostContent = true
   customCSS = ["style.css"]
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
