@@ -11,8 +11,8 @@ I am a System Administrator currently working within an MSP environment, special
 I built this site to serve as a living portfolio of my technical documentation and a log of my ongoing security research.
 
 ### Certifications & Training
-* **Active:** CompTIA CySA+
-* **In Progress:** WatchGuard Fireware Essentials
+* **Active:** CompTIA A+, Network+, Security+ CySA+, WatchGuard Fireware Essentials
+* **In Progress:** CCNA 
 
 ### Current Operations
 Beyond enterprise administration, I maintain an active home lab environment to test deployments before pushing them to production. My current lab stack includes a Raspberry Pi running DietPi, configured with an AdGuard Home DNS sinkhole and a Heimdall dashboard. 
