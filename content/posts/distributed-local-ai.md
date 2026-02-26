@@ -1,3 +1,5 @@
+![Distributed AI Architecture Diagram](/images/ai-architecture.jpg)
+
 ---
 title: "Operation: Distributed Private AI"
 date: 2026-02-25
