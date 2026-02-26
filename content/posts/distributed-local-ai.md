@@ -1,5 +1,3 @@
-![Distributed AI Architecture Diagram](/images/ai-architecture.jpg)
-
 ---
 title: "Operation: Distributed Private AI"
 date: 2026-02-25
@@ -17,6 +15,8 @@ Running an LLM natively on a Raspberry Pi is incredibly slow due to hardware lim
 
 * **The Backend Engine (Heavy Compute):** My main PC (Intel i7-13700K, RTX 4070 Ti) runs **Ollama**. This handles all the complex neural network math and model hosting (currently utilizing Meta's Llama 3), keeping inference times lightning fast.
 * **The Edge Node (The Interface):** My Raspberry Pi, running DietPi, hosts a Docker container running **Open WebUI**. This acts as the web server and graphical interface.
+
+![Distributed AI Architecture Diagram](/images/ai-architecture.jpg)
 
 ### The Network Bridge
 By opening port `11434` on the PC's firewall and binding the Ollama host to `0.0.0.0`, the Pi can successfully route prompts from the WebUI across the local network to the PC for processing.
