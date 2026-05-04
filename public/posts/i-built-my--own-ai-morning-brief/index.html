@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>I Built My Own AI Morning Brief on a Raspberry Pi :: CYBERSNOW // DOCUMENTATION</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How I replaced my morning routine of checking 5 different apps with a single email — built on n8n, Claude, and a $35 computer." />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="http://localhost:1313/posts/i-built-my--own-ai-morning-brief/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+<link rel="stylesheet" href="http://localhost:1313/style.css">
+
+
+<link rel="shortcut icon" href="http://localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="I Built My Own AI Morning Brief on a Raspberry Pi">
+<meta property="og:description" content="How I replaced my morning routine of checking 5 different apps with a single email — built on n8n, Claude, and a $35 computer." />
+<meta property="og:url" content="http://localhost:1313/posts/i-built-my--own-ai-morning-brief/" />
+<meta property="og:site_name" content="CYBERSNOW // DOCUMENTATION" />
+
+  <meta property="og:image" content="http://localhost:1313/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-05-04 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="http://localhost:1313/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about/">About</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about/" >About</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/i-built-my--own-ai-morning-brief/">I Built My Own AI Morning Brief on a Raspberry Pi</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-05-04</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="http://localhost:1313/tags/homelab/">homelab</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/automation/">automation</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/n8n/">n8n</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/claude/">claude</a>&nbsp;
+      
+      #<a href="http://localhost:1313/tags/raspberry-pi/">raspberry-pi</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="i-built-my-own-ai-morning-brief-on-a-raspberry-pi">I Built My Own AI Morning Brief on a Raspberry Pi<a href="#i-built-my-own-ai-morning-brief-on-a-raspberry-pi" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>I wake up at 4:45 AM. By 5:00 I&rsquo;m downstairs making pre-workout, by 5:30 I&rsquo;m at the gym. Somewhere in that 45-minute window I used to check my phone five times — calendar, weather, todo list, macro tracker, work email — just to figure out what the day actually looked like.</p>
+<p>That&rsquo;s a stupid amount of friction at 4:45 in the morning. So I built a thing.</p>
+<h2 id="what-it-does">What it does<a href="#what-it-does" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Every weekday at 4:45 AM, an email shows up in my inbox with everything I need for the day in one place:</p>
+<ul>
+<li>Today&rsquo;s weather and what to wear for the commute</li>
+<li>Every meeting and event from my Google Calendar</li>
+<li>My nutrition targets (calories, protein, carbs, fat)</li>
+<li>A short motivational line — not the cheesy kind, more stoic</li>
+<li>Anything I flagged as a top priority the night before</li>
+</ul>
+<p>It&rsquo;s clean HTML, properly formatted, and it lands before my alarm even goes off. I open my phone, read one email, and I&rsquo;m done. No app-hopping.</p>
+<h2 id="the-stack">The stack<a href="#the-stack" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>The whole thing runs on a Raspberry Pi 4 sitting on a shelf in my room. Total cost: a Pi I already had and zero dollars in monthly subscriptions.</p>
+<p>The pieces:</p>
+<ul>
+<li><strong>n8n</strong> — the automation engine that ties everything together. Self-hosted in Docker behind Nginx Proxy Manager and a Cloudflare Tunnel, so I can hit the UI from anywhere</li>
+<li><strong>Google Calendar API</strong> — pulls today&rsquo;s events</li>
+<li><strong>Claude API</strong> — generates the actual content of the brief, including the personalized line and weather commentary</li>
+<li><strong>Gmail API</strong> — sends the final email</li>
+<li><strong>Cron trigger</strong> — fires the workflow at 4:45 AM Monday through Friday</li>
+</ul>
+<p>The n8n workflow itself is maybe 8 nodes. Calendar in, weather in, macros pulled from a static config, all of it gets stuffed into a Claude prompt, Claude returns clean HTML, Gmail ships it out.</p>
+<h2 id="the-painful-parts">The painful parts<a href="#the-painful-parts" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>It wasn&rsquo;t quite plug-and-play.</p>
+<p>Getting the Cloudflare Tunnel routing right took a couple of attempts — n8n needed a specific subdomain config and I had a port collision with Vaultwarden running on the same Pi. Once I sorted out the routing it was fine.</p>
+<p>Google OAuth2 was the usual annoying dance. Create the project, configure the consent screen, add the scopes, generate credentials, paste them into n8n, hope it works. It worked on the second try.</p>
+<p>The biggest gotcha was the Claude API integration. n8n has a quirk where you need to switch certain fields to &ldquo;expression mode&rdquo; for them to actually parse variables. I spent way too long debugging why my prompt wasn&rsquo;t pulling in calendar data before I figured that out. Also had to wrestle with HTML rendering — Claude was returning markdown by default and Gmail was showing it raw until I tightened the system prompt.</p>
+<h2 id="why-bother">Why bother?<a href="#why-bother" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>A lot of people would say &ldquo;just use Notion AI&rdquo; or &ldquo;Google has Gemini for this now.&rdquo; Sure. But I wanted to actually own the thing. I wanted to know exactly what data goes where, exactly what model is being called, and exactly what shows up in my inbox. Self-hosted means I&rsquo;m not waiting for someone else&rsquo;s product roadmap.</p>
+<p>It also doubles as practice. n8n, OAuth flows, API integrations, Docker, reverse proxies, Cloudflare Tunnels — that&rsquo;s a ton of skills reinforced just by building something I actually use.</p>
+<h2 id="whats-next">What&rsquo;s next<a href="#whats-next" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Eventually I want to add a couple more data sources — pull from my Obsidian daily notes, surface anything I flagged the night before, maybe wire in a Pomodoro counter that resets daily. But the current version already saves me real friction every morning, which is the whole point.</p>
+<p>If you&rsquo;re sitting on a homelab and you&rsquo;ve been looking for a reason to dig into n8n, build something like this. It&rsquo;s small enough to finish in a weekend and useful enough that you&rsquo;ll never turn it off.</p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2026 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -1,18 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jake Snow - Systems Administrator on Jake Snow | IT Portfolio</title>
+    <title>CYBERSNOW // THREAT LOGS on CYBERSNOW // DOCUMENTATION</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content in Jake Snow - Systems Administrator on Jake Snow | IT Portfolio</description>
+    <description>Recent content in CYBERSNOW // THREAT LOGS on CYBERSNOW // DOCUMENTATION</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 04 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://localhost:1313/posts/hello-world/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/hello-world/</guid>
-      <description>&lt;p&gt;## System Initialized&lt;/p&gt;&#xA;&lt;p&gt;Welcome to the new documentation hub. I am building this site to serve as a central repository for the automation scripts I write for the MSP, as well as a living IT portfolio.&lt;/p&gt;&#xA;&lt;p&gt;**Current Status:**&lt;/p&gt;&#xA;&lt;p&gt;* **Active Certifications:** CySA+&lt;/p&gt;&#xA;&lt;p&gt;* **Currently Studying:** Fireware Essentials Exam&lt;/p&gt;&#xA;&lt;p&gt;More updates to the home lab and network configuration coming soon. End of line.&lt;/p&gt;</description>
+      <title>I Built My Own AI Morning Brief on a Raspberry Pi</title>
+      <link>http://localhost:1313/posts/i-built-my--own-ai-morning-brief/</link>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/i-built-my--own-ai-morning-brief/</guid>
+      <description>&lt;h1 id=&#34;i-built-my-own-ai-morning-brief-on-a-raspberry-pi&#34;&gt;I Built My Own AI Morning Brief on a Raspberry Pi&lt;/h1&gt;&#xA;&lt;p&gt;I wake up at 4:45 AM. By 5:00 I&amp;rsquo;m downstairs making pre-workout, by 5:30 I&amp;rsquo;m at the gym. Somewhere in that 45-minute window I used to check my phone five times — calendar, weather, todo list, macro tracker, work email — just to figure out what the day actually looked like.&lt;/p&gt;&#xA;&lt;p&gt;That&amp;rsquo;s a stupid amount of friction at 4:45 in the morning. So I built a thing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Operation: Distributed Private AI</title>
+      <link>http://localhost:1313/posts/distributed-local-ai/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/distributed-local-ai/</guid>
+      <description>&lt;h2 id=&#34;-the-local-llm-architecture&#34;&gt;// The Local LLM Architecture&lt;/h2&gt;&#xA;&lt;p&gt;With the rapid expansion of AI, I wanted the capabilities of a Large Language Model (LLM) without sending my data, network logs, or automation scripts out to a public cloud server.&lt;/p&gt;&#xA;&lt;p&gt;To solve this, I engineered a distributed, completely private AI architecture utilizing my existing home lab and PC hardware.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-hardware-split&#34;&gt;The Hardware Split&lt;/h3&gt;&#xA;&lt;p&gt;Running an LLM natively on a Raspberry Pi is incredibly slow due to hardware limitations. Instead, I split the compute from the interface:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;-identity-confirmed&#34;&gt;// IDENTITY CONFIRMED&lt;/h2&gt;&#xA;&lt;p&gt;I am a System Administrator currently working within an MSP environment, specializing in network security, automation, and enterprise infrastructure.&lt;/p&gt;&#xA;&lt;p&gt;I built this site to serve as a living portfolio of my technical documentation and a log of my ongoing security research.&lt;/p&gt;&#xA;&lt;h3 id=&#34;certifications--training&#34;&gt;Certifications &amp;amp; Training&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Active:&lt;/strong&gt; CompTIA A+, Network+, Security+ CySA+, WatchGuard Fireware Essentials&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;In Progress:&lt;/strong&gt; CCNA&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;current-operations&#34;&gt;Current Operations&lt;/h3&gt;&#xA;&lt;p&gt;Beyond enterprise administration, I maintain an active home lab environment to test deployments before pushing them to production. My current lab stack includes a Raspberry Pi running DietPi, configured with an AdGuard Home DNS sinkhole and a Heimdall dashboard.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Operation: Network Sinkhole</title>
+      <link>http://localhost:1313/posts/dietpi-adguard-homelab/</link>
+      <pubDate>Sat, 21 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/dietpi-adguard-homelab/</guid>
+      <description>&lt;p&gt;## Operation: Network Sinkhole&lt;/p&gt;&#xA;&lt;p&gt;One of the most critical steps in securing any network—whether it is an enterprise environment or a home network—is controlling the DNS traffic.&lt;/p&gt;&#xA;&lt;p&gt;For my current home lab architecture, I wanted a lightweight, low-overhead solution to act as a network-wide ad blocker and security sinkhole.&lt;/p&gt;&#xA;&lt;p&gt;### The Stack&lt;/p&gt;&#xA;&lt;p&gt;* **Hardware:** Raspberry Pi&lt;/p&gt;&#xA;&lt;p&gt;* **OS:** DietPi (chosen for its incredibly minimal footprint)&lt;/p&gt;&#xA;&lt;p&gt;* **DNS Sinkhole:** AdGuard Home&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

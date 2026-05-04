@@ -2,16 +2,19 @@
 <html lang="en">
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   
-    <title>Categories :: CYBERSNOW // DOCUMENTATION</title>
+    <title>Operation: Distributed Private AI :: CYBERSNOW // DOCUMENTATION</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="" />
+<meta name="description" content="// The Local LLM Architecture With the rapid expansion of AI, I wanted the capabilities of a Large Language Model (LLM) without sending my data, network logs, or automation scripts out to a public cloud server.
+To solve this, I engineered a distributed, completely private AI architecture utilizing my existing home lab and PC hardware.
+The Hardware Split Running an LLM natively on a Raspberry Pi is incredibly slow due to hardware limitations. Instead, I split the compute from the interface:
+" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
 
-<link rel="canonical" href="http://localhost:1313/categories/" />
+<link rel="canonical" href="http://localhost:1313/posts/distributed-local-ai/" />
 
 
 
@@ -71,10 +74,13 @@
 
 
 <meta property="og:locale" content="en" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Categories">
-<meta property="og:description" content="" />
-<meta property="og:url" content="http://localhost:1313/categories/" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Operation: Distributed Private AI">
+<meta property="og:description" content="// The Local LLM Architecture With the rapid expansion of AI, I wanted the capabilities of a Large Language Model (LLM) without sending my data, network logs, or automation scripts out to a public cloud server.
+To solve this, I engineered a distributed, completely private AI architecture utilizing my existing home lab and PC hardware.
+The Hardware Split Running an LLM natively on a Raspberry Pi is incredibly slow due to hardware limitations. Instead, I split the compute from the interface:
+" />
+<meta property="og:url" content="http://localhost:1313/posts/distributed-local-ai/" />
 <meta property="og:site_name" content="CYBERSNOW // DOCUMENTATION" />
 
   <meta property="og:image" content="http://localhost:1313/og-image.png">
@@ -83,10 +89,10 @@
 <meta property="og:image:height" content="627">
 
 
+  <meta property="article:published_time" content="2026-02-25 00:00:00 &#43;0000 UTC" />
 
 
 
-  <link href="/categories/index.xml" rel="alternate" type="application/rss+xml" title="CYBERSNOW // DOCUMENTATION" />
 
 
 
@@ -150,14 +156,42 @@
 
   <div class="content">
     
-  <div class="terms">
-    <h1>Categories</h1>
+<article class="post">
+  <h1 class="post-title">
+    <a href="http://localhost:1313/posts/distributed-local-ai/">Operation: Distributed Private AI</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-02-25</time></div>
+
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="-the-local-llm-architecture">// The Local LLM Architecture<a href="#-the-local-llm-architecture" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>With the rapid expansion of AI, I wanted the capabilities of a Large Language Model (LLM) without sending my data, network logs, or automation scripts out to a public cloud server.</p>
+<p>To solve this, I engineered a distributed, completely private AI architecture utilizing my existing home lab and PC hardware.</p>
+<h3 id="the-hardware-split">The Hardware Split<a href="#the-hardware-split" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Running an LLM natively on a Raspberry Pi is incredibly slow due to hardware limitations. Instead, I split the compute from the interface:</p>
+<ul>
+<li><strong>The Backend Engine (Heavy Compute):</strong> My main PC (Intel i7-13700K, RTX 4070 Ti) runs <strong>Ollama</strong>. This handles all the complex neural network math and model hosting (currently utilizing Meta&rsquo;s Llama 3), keeping inference times lightning fast.</li>
+<li><strong>The Edge Node (The Interface):</strong> My Raspberry Pi, running DietPi, hosts a Docker container running <strong>Open WebUI</strong>. This acts as the web server and graphical interface.</li>
+</ul>
+<p><img src="/images/ai-architecture.jpg" alt="Distributed AI Architecture Diagram"></p>
+<h3 id="the-network-bridge">The Network Bridge<a href="#the-network-bridge" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>By opening port <code>11434</code> on the PC&rsquo;s firewall and binding the Ollama host to <code>0.0.0.0</code>, the Pi can successfully route prompts from the WebUI across the local network to the PC for processing.</p>
+<p>The result is a self-hosted, ChatGPT-style interface accessible from any device on my Wi-Fi. It is completely offline, highly secure, and utilizes my GPU&rsquo;s VRAM for enterprise-grade response speeds.</p>
+
+      </div></div>
+
+  
+
+  
     
-    <ul>
-      
-      
-    </ul>
-  </div>
+
+  
+</article>
 
   </div>
 
