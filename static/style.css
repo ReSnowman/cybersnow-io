@@ -42,3 +42,146 @@ a, button {
 p, h1, h2, h3, code, span {
   cursor: text;
 }
+/* ============================================
+   cybersnow.io - custom sidebar styles
+   appended to terminal theme via customCSS
+   ============================================ */
+
+/* Hide sidebar on smaller screens — terminal theme is mobile-first */
+@media (max-width: 1280px) {
+  #cs-sidebar { display: none !important; }
+}
+
+#cs-sidebar {
+  position: fixed;
+  top: 80px;
+  right: 40px;
+  width: 280px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+  z-index: 100;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  color: #aaa;
+
+  /* subtle scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120, 200, 255, 0.2) transparent;
+}
+
+#cs-sidebar::-webkit-scrollbar { width: 4px; }
+#cs-sidebar::-webkit-scrollbar-thumb {
+  background: rgba(120, 200, 255, 0.2);
+  border-radius: 2px;
+}
+
+.cs-sidebar-inner {
+  background: rgba(20, 24, 30, 0.6);
+  border: 1px solid rgba(120, 200, 255, 0.15);
+  border-radius: 4px;
+  padding: 1.25rem 1.5rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.cs-block {
+  margin-bottom: 1.5rem;
+}
+
+.cs-block:last-child {
+  margin-bottom: 0;
+}
+
+.cs-label {
+  font-size: 11px;
+  color: #78c8ff;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  text-transform: lowercase;
+  opacity: 0.85;
+}
+
+.cs-text {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #aaa;
+  margin: 0;
+}
+
+.cs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.cs-list li {
+  color: #ccc;
+}
+
+.cs-key {
+  display: inline-block;
+  color: #78c8ff;
+  opacity: 0.7;
+  margin-right: 8px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.cs-links a {
+  color: #78c8ff;
+  text-decoration: none;
+  transition: opacity 0.15s;
+}
+
+.cs-links a:hover {
+  opacity: 0.7;
+  text-decoration: underline;
+}
+
+.cs-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.cs-tag {
+  font-size: 10px;
+  padding: 3px 8px;
+  border: 1px solid rgba(120, 200, 255, 0.2);
+  color: #aaa;
+  letter-spacing: 0.02em;
+  border-radius: 2px;
+  background: rgba(120, 200, 255, 0.04);
+}
+
+.cs-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(120, 200, 255, 0.15);
+  margin-top: 0.5rem;
+}
+
+.cs-dot {
+  width: 7px;
+  height: 7px;
+  background: #4ade80;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(74, 222, 128, 0.6);
+  animation: cs-pulse 2s infinite;
+  flex-shrink: 0;
+}
+
+.cs-status-text {
+  font-size: 10px;
+  color: #888;
+  letter-spacing: 0.05em;
+}
+
+@keyframes cs-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.4; }
+}
